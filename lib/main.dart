@@ -30,9 +30,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: const Text("Login Page"),
-      ),
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -72,12 +70,13 @@ class _LoginState extends State<Login> {
               onPressed: () {},
               child: const Text(
                 'Forgot Password',
-                style: TextStyle(color: Colors.black, fontSize: 15),
+                style: TextStyle(
+                    color: Color.fromARGB(255, 53, 52, 52), fontSize: 15),
               ),
             ),
             Container(
               height: 50,
-              width: 250,
+              width: 480,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: TextButton(
